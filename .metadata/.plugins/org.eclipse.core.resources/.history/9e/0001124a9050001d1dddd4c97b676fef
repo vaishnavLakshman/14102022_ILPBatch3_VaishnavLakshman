@@ -1,0 +1,21 @@
+package com.experion.assignment;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class SumOfSeries1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
+		int limit = scanner.nextInt();
+		ArrayList<Integer> oddNumbers = new ArrayList<Integer>();
+		
+		while(int i=1; i <= limit)
+		{
+			
+		}
+
+	}
+}

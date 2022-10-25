@@ -1,0 +1,31 @@
+package com.experion.utililty;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.experion.service.Service;
+import com.experion.service.product;
+
+public class productUtility {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Scanner scanner = new Scanner(System.in);
+		//ArrayList<product> productList = new ArrayList<product>();
+		System.out.println("***MENU***\n1.Add Card\n2.Add Account\n3.Buy Product");
+		int choice = scanner.nextInt();
+		switch(choice)
+		{
+		case 1 : Service.createCardProduct();
+				break;
+		case 2 : Service.createAccountProduct();
+				break;
+		case 3 : Service.buyProduct();
+				break;
+		default : System.out.println("Invalid Choice");
+		}
+	}
+
+}

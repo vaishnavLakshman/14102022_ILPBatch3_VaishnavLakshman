@@ -1,0 +1,31 @@
+package com.experion.assignment;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.function.Consumer;
+
+public class SumOfSeriesFibonacci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
+		int n;
+		System.out.println("Enter the limit: ");
+		n = scanner.nextInt();
+//		int array[] = new int[(limit+1)/2];
+		ArrayList<Integer> fibonacciSeries = new ArrayList<Integer>();
+		int firstTerm = 0, secondTerm = 1;
+		fibonacciSeries.add(firstTerm);
+	    for (int i = 1; i <= n; ++i) 
+	    {
+	      // compute the next term
+	      int nextTerm = firstTerm + secondTerm;
+	      fibonacciSeries.add(nextTerm);
+	      
+	      firstTerm = secondTerm;
+	      secondTerm = nextTerm;
+	    }
+
+	}
+}

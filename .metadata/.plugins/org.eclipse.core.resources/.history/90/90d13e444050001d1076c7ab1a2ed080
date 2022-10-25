@@ -1,0 +1,18 @@
+package com.experion.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.experion.entity.Accounts;
+
+public class AccountUtility {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("******Welcome To Bank******");
+		ArrayList<Accounts>accountList=new ArrayList<Accounts>();
+
+	}
+
+}

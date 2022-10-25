@@ -1,0 +1,10 @@
+package com.experion.entity;
+
+public class Accounts {
+	
+	private String customerId;
+	private String customerName;
+	private String accountType;
+	private double balance;
+	
+}

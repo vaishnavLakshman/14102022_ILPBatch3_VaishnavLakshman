@@ -1,0 +1,22 @@
+package com.experion.assignment;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.function.Consumer;
+
+public class SumOfSeries3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the limit: ");
+		int limit = scanner.nextInt();
+		int i,fact=1;     
+		for(i=1;i<=limit;i++)
+		{    
+		    fact=fact*i; 
+		}    
+		  System.out.println("Factorial of "+limit+" is: "+fact);    
+	}
+}

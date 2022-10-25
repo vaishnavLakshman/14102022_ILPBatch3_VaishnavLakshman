@@ -1,0 +1,12 @@
+
+public class CustomerView {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("1.Purchase Product\n2.Display Products");
+		int choice = scanner.nextInt();
+		
+	}
+
+}

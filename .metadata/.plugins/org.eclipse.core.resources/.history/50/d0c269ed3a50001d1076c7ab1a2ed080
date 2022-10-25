@@ -1,0 +1,14 @@
+package com.experion.service;
+
+import java.util.Scanner;
+
+public class AccountService {
+	
+	Scanner scanner = new Scanner(System.in);
+	public static void createAccount() {
+		
+		System.out.println("Enter Customer Id: ");
+		customerId = scanner.nextLine();
+	}
+
+}

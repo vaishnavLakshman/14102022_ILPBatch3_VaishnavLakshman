@@ -1,0 +1,17 @@
+package com.bank.entity;
+
+import java.util.ArrayList;
+
+public class Customer {
+
+	private String customerId;
+	private String customerName;
+	private ArrayList<Account> accountList;
+	public Customer(String customerId, String customerName, ArrayList<Account> accountList) {
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.accountList = accountList;
+	}
+
+	
+}

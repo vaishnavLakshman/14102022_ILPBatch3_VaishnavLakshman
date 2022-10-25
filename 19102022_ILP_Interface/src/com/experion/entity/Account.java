@@ -1,0 +1,48 @@
+package com.experion.entity;
+
+import java.util.ArrayList;
+
+public class Account extends Product implements AccountCardServices{
+	
+	private String accountNumber;
+	private double accountBalance;
+	
+	
+	public Account(String productName, String accountNumber, double accountBalance) {
+		super(productName);
+		this.accountNumber = accountNumber;
+		this.accountBalance = accountBalance;
+	}
+	public String getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+	public double getAcountBalance() {
+		return accountBalance;
+	}
+	public void setAcountBalance(double acountBalance) {
+		this.accountBalance = acountBalance;
+	}
+	@Override
+	public void checkProductValidity() {
+		// TODO Auto-generated method stub
+		System.out.println("Validity check of account class called");
+		
+	}
+	@Override
+	public void checkBalance() {
+		System.out.println("Balance check initiated\n");
+		
+	}
+
+
+	@Override
+	public void cashWithdrawal() {
+		System.out.println("Cash withdrawal initiated\n");
+		
+	}
+	
+
+}

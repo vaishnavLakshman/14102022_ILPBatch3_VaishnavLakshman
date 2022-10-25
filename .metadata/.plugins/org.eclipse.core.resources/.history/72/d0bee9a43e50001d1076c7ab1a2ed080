@@ -1,0 +1,54 @@
+package com.experion.service;
+
+import java.util.Scanner;
+
+public class AccountService {
+	
+	public static Account createAccount() {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("***Accounts Available***");
+		System.out.println("1.Savings Max Account\n2.Current Account\n3.Loan Account");
+		System.out.println("Enter your choice: ");
+		int accountChoice = scanner.nextInt();
+			if(accountChoice == 1)
+			{
+				//Scanner scanner = new Scanner(System.in);
+				System.out.println("Enter Customer Id: ");
+				String customerId = scanner.nextLine();
+				System.out.println("Enter Customer Name: ");
+				String customerName = scanner.nextLine();
+				String accountType = "Savings Max Account";
+				double balance;
+			}
+			else if(accountChoice == 2)
+			{
+				//Scanner scanner = new Scanner(System.in);
+				System.out.println("Enter Customer Id: ");
+				String customerId = scanner.nextLine();
+				System.out.println("Enter Customer Name: ");
+				String customerName = scanner.nextLine();
+				String accountType = "Current Account";
+				double balance;
+			}
+			else if(accountChoice == 3)
+			{
+				//Scanner scanner = new Scanner(System.in);
+				System.out.println("Enter Customer Id: ");
+				String customerId = scanner.nextLine();
+				System.out.println("Enter Customer Name: ");
+				String customerName = scanner.nextLine();
+				String accountType = "Loan Account";
+				double balance;
+			}
+		
+		
+		
+		
+		
+		
+		
+		Account account = new Account(customerId, customerName,accountType, balance);
+	}
+
+}

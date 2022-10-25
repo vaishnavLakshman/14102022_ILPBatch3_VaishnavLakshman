@@ -1,0 +1,8 @@
+package com.experion.utility;
+
+public class Customer {
+	
+	private String customerName;
+	private String customerCode;
+
+}

@@ -1,0 +1,37 @@
+package com.experion.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.experion.entity.Accounts;
+import com.experion.service.AccountService;
+
+public class AccountUtility {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("******Welcome To Bank******");
+		ArrayList<Accounts>accountList=new ArrayList<Accounts>();
+		
+		System.out.println("1.Create Accounts\n2.Manage Accounts\n3.Exit");
+		int choice = scanner.nextInt();
+		if(choice == 1)
+		{
+			System.out.println("Enter Customer Id: ");
+			String customerId = scanner.nextLine();
+			if(customerId != accountList.customerId)
+			{
+				System.out.println("Customer Id not available. Create new account");
+			}
+			else
+			{
+				System.out.println("Welcome back, "+customerName+"\n");
+				accountList.add(AccountService.createAccount());
+				
+			}
+		}
+
+	}
+
+}
